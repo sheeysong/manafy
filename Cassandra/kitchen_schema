@@ -1,0 +1,34 @@
+
+   CREATE KEYSPACE manafy
+   WITH replication = {'class':'SimpleStrategy', 'replication_factor' : 3};
+ 
+   CREATE TABLE Layout(
+   id int PRIMARY KEY,
+   shape text
+   );
+   
+   Insert into manafy.Layout(id,shape) values(1,'U shape');
+   Insert into manafy.Layout(id,shape) values(2,'L shape');
+   Insert into manafy.Layout(id,shape) values(3,'Pentagonal');
+   Insert into manafy.Layout(id,shape) values(4,'Wedge shape');
+   Insert into manafy.Layout(id,shape) values(5,'Essential work triangle');
+   Insert into manafy.Layout(id,shape) values(6,'Zone design');
+   Insert into manafy.Layout(id,shape) values(7,'Galley or Corridor');
+   
+   CREATE TABLE Style(
+   id int PRIMARY KEY,
+   style text
+   );
+   
+   Insert into manafy.Style(id,style) values(1,'Traditional');
+   Insert into manafy.Style(id,style) values(2,'Modern');
+   Insert into manafy.Style(id,style) values(3,'Transnational');
+   Insert into manafy.Style(id,style) values(4,'Cottage');
+   Insert into manafy.Style(id,style) values(5,'Classic');
+   Insert into manafy.Style(id,style) values(6,'Contemporary');
+   Insert into manafy.Style(id,style) values(7,'Romantic');
+   Insert into manafy.Style(id,style) values(8,'Craftsman');
+   Insert into manafy.Style(id,style) values(9,'Tuscan');
+   
+   
+   
